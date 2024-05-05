@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Promedio</title>
+</head>
+<body>
+    <h1 class="h1">Promedio Notas</h1>
+    <form id="formulario" class="formulario">
+        <label for="usuario" class="label">
+            Usuario
+            <input type="text" id="usuario" class="input" required>
+        </label>
+        <label for="id" class="label">
+            ID
+            <input type="number" id="id" class="input" required>
+        </label>
+        <div class="contenedorIngresar">
+            <label for="nota" class="label">
+                Nota
+                <input type="number" id="nota" class="input">
+            </label>
+            <button type="button" id="ingresar" class="botonIngresar">Ingresar</button>
+        </div>
+        <button type="submit" id="calcular" class="botonCalcular" disabled>Calcular</button>
+    </form>
+    <table class="tabla">
+        <thead>
+            <th>#</th>
+            <th>Nota</th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+    <div class="parrafo">
+        <p id="nombre"></p>
+        <p id="promedio"></p>
+        <p id="aprobado"></p>
+    </div>
+</body>
+<script src="./JS/promedio.js"></script>
+</html>
